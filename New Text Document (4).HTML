@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+div.a {
+  text-align: center;
+}
+
+
+
+footer {
+  text-align: center;
+  padding:60px;
+  background-color: BLACK;
+  color: white;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 99px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a  href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<!-- Slide Show -->
+<section>
+<img class="mySlides" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/p90385570-highres-the-new-bmw-communic-1583423938.jpg"
+  style="width:100%">
+  
+  <img class="mySlides" src="https://www.stuffmirror.com/wp-content/uploads/2017/11/2017-BMW-7-Series-Black-Ice-wallpaper-hd-1920x1080.jpg">
+  
+  <img class="mySlides" src="https://automobili.klik.hr/wp-content/uploads/2019/06/bmw-8-Series-Gran-Coupe-2020-5.jpg"
+  style="width:100%">
+  
+</section>
+<img class="mySlides" src="https://www.wsupercars.com/wallpapers/BMW/2020-BMW-X6-M-Competition-001-1080.jpg"
+  style="width:100%">
+</section>
+
+
+
+<div class="a">
+<h2>BMW</h2>
+<p>Bayerische Motoren Werke AG (skraćeno BMW) njemački je proizvođač automobila, motorkotača i bicikala sa sjedištem u Münchenu.</p>
+</div>
+<div class="a">
+<p>BMW je 2011. godine službeno predstavio podmarku "BMW i" koja će proizvoditi automobile niske emisije štetnih plinova.BMW je poznat po svojim duplim "bubrezima" na prednjoj masci koji su u početku bili uski a u modernim automobilima široki.</p>
+</div>
+
+
+<div class="a">
+<p>Straga su poznata svijetla u obliku slova L. Dizajn u unutrašnjosti je poznat po kokpitu usmijerenom prema vozaču koji je debitirao na prvoj generaciji serije 5.</p>
+</div>
+
+
+<footer>
+  <p>AUTOR:Antonio Matijašević<br>
+   <p>GMAIL:<br>
+  <a href="antoniomatijasevic.com">antoniomatijasevic.com</a></p>
+</footer>
+
+
+
+
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
